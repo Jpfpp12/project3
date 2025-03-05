@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Vintage Art Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #e6e3dc;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width: 1100px;
+            margin: auto;
+            border: 1px solid beige;
+            border-radius: 45px;
+            padding: 2px;
+          
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            
+        }
+
+        nav ul li {
+            border: 1px solid beige;
+            border-radius: 45px;
+            margin: 1px;
+            padding: 20px;
+          
+        }
+        nav ul :hover{
+            background-color: beige;
+            transition: 0.5s;
+        }
+
+        nav ul li  {
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover{
+            color: rgb(172, 125, 63);
+            transition: 0.5s;
+        }
+       .logo{
+        text-align: center;
+        width:400px;
+        border: 1px solid rgba(197, 116, 116, 0.945);
+        border-radius: 30px;
+        padding: 20px;
+        
+       }
+       .gallery {
+        display: grid;
+        grid-template-columns: 2fr,2fr;
+        grid-template-rows: 2fr,2fr;
+        gap: 10px;
+        padding: 30px;
+        max-width: 1000px;
+        margin: auto;
+        justify-content: center; 
+        }
+
+      
+
+        .gallery .beige {
+            grid-row: span 4;
+            grid-column: span 1;
+        }
+        .gallery .olive {
+            grid-row: span 3;
+            grid-column: span 2;
+        }
+
+        .card {
+            padding: 30px;
+            border-radius: 15px;
+            text-align: left;
+            background: rgba(238, 238, 238, 0.1);
+            width: 90%;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+            transition: 0.5s;
+        }
+
+        .tag{
+            color: #e08c65;
+            background-color: beige;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        
+        .card img:hover{
+            transform: scale(1.05);
+        }
+        .card h2 {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+
+        .card .bold {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .port:hover{
+            text-decoration: underline;
+            transition: 5s;
+        }
+
+        button {
+            
+            padding: 20px;
+            border: none;
+            background: #ffffff;
+            color: #222;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 35px;
+            margin-top: 40px;
+        }
+
+        button:hover {
+            background: #020100;
+            color: white;
+            transform: scale(1.1);
+            transition: 1s;
+        }
+
+        footer {
+            background: #222;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Museo Sans</div>
+            <ul>
+                <li ><a class="a1" href="#collections">Collections</a></li>
+                <li ><a href="#mission">Our Mission</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact Now</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="gallery">
+        <div class="card beige">
+            <span class="tag">CONGREEVE STREET</span>
+            <h2>Birmingham <span class="bold">Museums.</span></h2>
+            <img src="https://s3-alpha-sig.figma.com/img/dd77/b915/9bd218bf2e2ad3b90da9abce140d1ba8?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=EaI~WY5J95rtFSHICaUU9V~E5sFwUTDe22mTU3UaxFjdTDJz0t1MUzqEd4T6MrVcUzMCF1n4rcul0YaYPkIaut5I6EshQDv0F0yDGRPrDe8~se1AU~hXxDNXu0PjRBgulUskXZRikvLbojrPYD3cBRxWEtSg23doyC9vHlJDzFLz5RtWcUSsurc5AiW425KBvXyNV-yLZoBwk4D9DNb0H3ROJNhLyODMVsbRFGbhE-pES96swA6P6J6LPLYf-Zoy7dxkKWJ6wFvFWGouJqixiOkpCvuFWyF6MNjpsy~hmKPsXwYWboGZADYAl7Sbv~-kOvzLqIHyfrgQ8q7ngY8fKw__" alt="Birmingham Museum" >
+            <button>GET STARTED</button>
+        </div>
+        
+        <div class="card olive">
+            <span class="tag">EUROPEANA</span>
+            <h2>A Woman Slicing <span class="bold">Bread.</span></h2>
+            <p>DATE: 1800. INSTITUTION: RIJKSMUSEUM.</p>
+            <img src="https://s3-alpha-sig.figma.com/img/7a05/7321/02ecc2f34052f178793eda90e3be1bd3?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VShmhGKm~p4nl-3xeCpyCFOHIFehRwi~kThti4HN8rnFx9Q9rtT3NGWimBhKE5jvN56yFVHcc2jS1CEabKg1-styvRs0UmXu-D1NGZHR46NEH49RgzQAjwlgD51bc6ja-h3tscJX44vp6VevKH~jw8nhhbrCev4vfjZ7r-KDlzB5GRUBIMTmaBcbMccISD0lKJsYssl1jgE60DVwbWYYe8v1h4PXH8GBaR9sCYDGOAsxXcDlChimOy-zvCoGMGNdiKaaJIM8rkBg1mOr2a8i0yLQPsKZcSfJRJI9j~DCO7BUXK~M~ZMBEKJaiyrV0-UHy94Fu91pJSRefvVLmT4skA__" alt="Woman Slicing Bread">
+            <button>GET STARTED</button>
+        </div>
+        
+        <div class="card brown">
+            <img src="https://s3-alpha-sig.figma.com/img/bcfd/ff4d/3ab4aa39f45b58c07736be0cbdee0039?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=sYxacYz1pzRIYQ~L2Erh8KT04MzbRGtIsQYIM5pkIJ-XLtgYL0fvPVlopb~cFzlGMVVquekDITXmfgcawdWlqO09YodhAe9Rl9Klf2mKSmI~PvufxWOoHIAQKLm~9f~YDdAWaOdbCqWbxLEiGF9NOhxm-0YIdnf~4iU6zQfJGfwD3IKEgEEpy-6D2l4Yoyq~EFZSaJjK2q2qNA5XXaOd6bJd4qlvpEpdSWOSkQIVsDil6jrFuUzcbIis1TwRz3h6LMa6FckZWVlnZwwBG8d5SVlxXfzdbMA6XVyAwzknfr5cP14-gIKes-gtHAjwdvuflgd4MzXD9D5zy0OafiUrjQ__" alt="Vintage Portrait">
+            <h2 class="port">Portrait</h2>
+            <p>PORTRAIT OF MARITGE CLAESDR VOOGHT. DATE: 1639.</p>
+            
+            <button>GET STARTED</button>
+        </div>
+        
+        <div class="card light-brown">
+            <span class="tag">EUROPEANA</span>
+            <h2>Vintage <span class="bold">Painting.</span></h2>
+            <img src="https://s3-alpha-sig.figma.com/img/7926/ae8d/c1102600cf253f254f2bd57b7b254745?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QAc0qe5h5D2y9tpxk-2bU4VgrRFTbkY5d4dEEKO6rPoGSNuU7lK0urNOUKi8lVRgsbmbFZ9nRXBRpgwd6Leig0SZaaKW7Z8JBpfi029apAOq0ARZ4TPTMyW8xnziVpa0HGZrMiZ~qtmRxrQesLHlMClk5RCUbgeJd4HxW1uzCglLbYyl6PPYiVANrAU8EVmjN8i58DSmW-lRbDIAvOalzwf5~TqvDg7Ol6cPjiBmWkSMaGVwe1hxc1x91lNDRNLXdewbp8K6furaqs57J-c~qCBxrKH-OVcFY9ADb-DeYv504ZBUUtQorLgAdlpPWxxL~WdlzWG4ucoqZt78Vjk0MQ__" alt="vintage painting" style="border-radius: 200px;">
+            <p>PORTRAIT OF A MAN. DATE: 1648. INSTITUTION: RIJKSMUSEUM.</p>
+            <button>GET STARTED</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vintage Art Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

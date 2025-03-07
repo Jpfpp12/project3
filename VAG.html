@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8s">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,59 +15,84 @@
             padding: 0;
             box-sizing: border-box;
             font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+            font-optical-sizing: auto;
+          
         }
 
         body {
             background-color: #1a1a1a;
-            color: #e6e3dc;
+            color: #3a1c04;
             text-align: center;
+            margin-left: 100px;
         }
 
         nav {
-            display: flex;
+            display: flex;      
             justify-content: space-between;
-            width: 1100px;
+            width: 1620px;
             margin: auto;
             border: 1px solid beige;
             border-radius: 45px;
             padding: 2px;
-          
+            position: fixed;
+            top: 10px;
+            left: 330px;
+            z-index: 1;
+           
+        
+            
         }
-
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
         nav ul {
             list-style: none;
             display: flex;
+            gap: 10px;
+            
             
         }
 
         nav ul li {
             border: 1px solid beige;
-            border-radius: 45px;
-            margin: 1px;
+            border-radius: 40px;
+            margin: px;
             padding: 20px;
+            background-color: #1a1a1a;
+            position: relative;
+            right: 275px;
+            width: 200px;
+            
           
         }
         nav ul :hover{
             background-color: beige;
-            transition: 0.5s;
+            transition: 0.2s;
         }
 
         nav ul li  {
             text-decoration: none;
             font-size: 18px;
         }
+        
         nav ul li a:hover{
             color: rgb(172, 125, 63);
-            transition: 0.5s;
+            transition: 0.4s ease;
         }
        .logo{
         text-align: center;
-        width:400px;
-        border: 1px solid rgba(197, 116, 116, 0.945);
-        border-radius: 30px;
+        width:500px;
+        border: none;
+        border-radius: 50px;
         padding: 20px;
-        
+        background: rgba(50, 48, 37, 1);
+        color: white;
+        font-size: 20px;
+       }
+       #a1{
+        position: relative;
+        left: 0px;
        }
        .gallery {
         display: grid;
@@ -79,45 +104,155 @@
         margin: auto;
         justify-content: center; 
         }
-
-      
-
         .gallery .beige {
             grid-row: span 4;
             grid-column: span 1;
-        }
-        .gallery .olive {
-            grid-row: span 3;
-            grid-column: span 2;
-        }
-
-        .card {
-            padding: 30px;
-            border-radius: 15px;
-            text-align: left;
-            background: rgba(238, 238, 238, 0.1);
-            width: 90%;
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-top: 15px;
-            transition: 0.5s;
-        }
-
-        .tag{
-            color: #e08c65;
+            width: 667px;
+            height: 981px;
             background-color: beige;
-            border-radius: 10px;
-            font-size: 20px;
+            position: relative;
+            left: -100px;
+            
+        }
+        .img1{
+            background-image: url(https://s3-alpha-sig.figma.com/img/dd77/b915/9bd218bf2e2ad3b90da9abce140d1ba8?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=EaI~WY5J95rtFSHICaUU9V~E5sFwUTDe22mTU3UaxFjdTDJz0t1MUzqEd4T6MrVcUzMCF1n4rcul0YaYPkIaut5I6EshQDv0F0yDGRPrDe8~se1AU~hXxDNXu0PjRBgulUskXZRikvLbojrPYD3cBRxWEtSg23doyC9vHlJDzFLz5RtWcUSsurc5AiW425KBvXyNV-yLZoBwk4D9DNb0H3ROJNhLyODMVsbRFGbhE-pES96swA6P6J6LPLYf-Zoy7dxkKWJ6wFvFWGouJqixiOkpCvuFWyF6MNjpsy~hmKPsXwYWboGZADYAl7Sbv~-kOvzLqIHyfrgQ8q7ngY8fKw__);
+            width: 100%;
+            height: 100%;
+            max-height: 700px; ;
+            background-position: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 30px;
+        }
+        .img1:hover{
+            background-size: 170%; 
+        }
+        .gallery .beige button{
+            position: relative;
+            top: 40px;
+            background-color:beige ;
+            padding: 10px;
+            border: none;
+        }
+       
+        .gallery .olive {
+            grid-row: span 1;
+            grid-column: span1;
+            width: 947px;
+            height: 356px;
+            background-color:rgba(142, 136, 109, 1);
+            position: relative;
+            right: 100px;
         }
         
-        .card img:hover{
-            transform: scale(1.05);
+        .img2{
+            background-image: url(https://s3-alpha-sig.figma.com/img/7a05/7321/02ecc2f34052f178793eda90e3be1bd3?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VShmhGKm~p4nl-3xeCpyCFOHIFehRwi~kThti4HN8rnFx9Q9rtT3NGWimBhKE5jvN56yFVHcc2jS1CEabKg1-styvRs0UmXu-D1NGZHR46NEH49RgzQAjwlgD51bc6ja-h3tscJX44vp6VevKH~jw8nhhbrCev4vfjZ7r-KDlzB5GRUBIMTmaBcbMccISD0lKJsYssl1jgE60DVwbWYYe8v1h4PXH8GBaR9sCYDGOAsxXcDlChimOy-zvCoGMGNdiKaaJIM8rkBg1mOr2a8i0yLQPsKZcSfJRJI9j~DCO7BUXK~M~ZMBEKJaiyrV0-UHy94Fu91pJSRefvVLmT4skA_);
+            width: 50%;
+            height: 100%;
+            max-height: 250px; ;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 40px;
+            position: relative;
+            bottom: 150px;
+            left: 430px;
         }
+        .img2:hover{
+           background-size: 120%; 
+        }
+        .gallery .olive button{
+            position: relative;
+            right:1px;
+            top: -210px;
+            background-color:rgba(142, 136, 109, 1);
+            padding: 10px;
+            border: none;
+        }
+        .gallery .brown{
+            width: 405px;
+            position: relative;
+            right: 100px;
+            height: 597px;
+            background-color: rgba(145, 110, 88, 1);
+
+        }
+        .img3{
+            background-image: url(https://s3-alpha-sig.figma.com/img/bcfd/ff4d/3ab4aa39f45b58c07736be0cbdee0039?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=sYxacYz1pzRIYQ~L2Erh8KT04MzbRGtIsQYIM5pkIJ-XLtgYL0fvPVlopb~cFzlGMVVquekDITXmfgcawdWlqO09YodhAe9Rl9Klf2mKSmI~PvufxWOoHIAQKLm~9f~YDdAWaOdbCqWbxLEiGF9NOhxm-0YIdnf~4iU6zQfJGfwD3IKEgEEpy-6D2l4Yoyq~EFZSaJjK2q2qNA5XXaOd6bJd4qlvpEpdSWOSkQIVsDil6jrFuUzcbIis1TwRz3h6LMa6FckZWVlnZwwBG8d5SVlxXfzdbMA6XVyAwzknfr5cP14-gIKes-gtHAjwdvuflgd4MzXD9D5zy0OafiUrjQ__);
+            width: 100%;
+            height: 100%;
+            max-height: 200px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 30px;
+            
+
+        }
+        .img3:hover{
+            background-size: 110%;
+        }
+        .gallery .brown button{
+            position: relative;
+            top: 150px;
+            background-color:rgba(145, 110, 88, 1);
+            padding: 10px;
+            border: none;
+            
+        }
+        .gallery .light-brown{
+            width: 525px;
+            height: 597px;
+            position: relative;
+            left: 320px;
+            top: -525px;
+            background: rgba(177, 164, 142, 1);
+        }
+        .gallery .light-brown button{
+            position: relative;
+            top: 135px;
+            background-color: rgba(177, 164, 142, 1);
+            padding: 10px;
+            border: none;
+            
+        }
+        .img4{
+            background-image: url(https://s3-alpha-sig.figma.com/img/7926/ae8d/c1102600cf253f254f2bd57b7b254745?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QAc0qe5h5D2y9tpxk-2bU4VgrRFTbkY5d4dEEKO6rPoGSNuU7lK0urNOUKi8lVRgsbmbFZ9nRXBRpgwd6Leig0SZaaKW7Z8JBpfi029apAOq0ARZ4TPTMyW8xnziVpa0HGZrMiZ~qtmRxrQesLHlMClk5RCUbgeJd4HxW1uzCglLbYyl6PPYiVANrAU8EVmjN8i58DSmW-lRbDIAvOalzwf5~TqvDg7Ol6cPjiBmWkSMaGVwe1hxc1x91lNDRNLXdewbp8K6furaqs57J-c~qCBxrKH-OVcFY9ADb-DeYv504ZBUUtQorLgAdlpPWxxL~WdlzWG4ucoqZt78Vjk0MQ__);
+            width: 40%;
+            height: 35%;
+            max-height: 440px; ;
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            border-radius: 300px;   
+            margin-bottom: 20px;      
+            
+        }
+        .img4:hover{
+            background-size: 115% ;
+        }
+        .card {
+            padding: 30px;
+            border-radius: 50px;
+            text-align: left;
+            background: rgb(223, 213, 185);
+            width: 100%;
+            position: relative;
+            top: 80px;
+            border: 2px solid rgb(109, 81, 20);
+        
+        }
+        .tag{
+            color: #803817;
+            border: 2px solid ;
+            border-radius: 35px;
+            font-size: 20px;
+            padding: 5px;
+            
+        }
+        
         .card h2 {
-            font-size: 22px;
+            font-size: 30px;
             margin: 10px 0;
         }
 
@@ -128,31 +263,40 @@
         .port:hover{
             text-decoration: underline;
             transition: 5s;
-        }
-
-        button {
             
-            padding: 20px;
-            border: none;
-            background: #ffffff;
-            color: #222;
+        }
+        .imoe{
+            width: 290px;
+        }
+        .line1 ,.line2 ,.line3, .line4{
+            border: 0.5px solid black;   
+        }
+        .line1{
+            position: relative;
+            bottom: -60px;
+        }
+        .line2{
+            position: relative;
+            bottom: 180px;
+            max-width: 410px;
+        }
+        .line3{position: relative;
+        bottom: -175px;
+        }
+        .line4{
+            position: relative;
+            bottom: -145px;
+        }
+        button {
             cursor: pointer;
             font-size: 18px;
-            border-radius: 35px;
-            margin-top: 40px;
-        }
-
-        button:hover {
-            background: #020100;
-            color: white;
-            transform: scale(1.1);
-            transition: 1s;
+            margin-top: 30px;
         }
 
         footer {
             background: #222;
             padding: 15px;
-            margin-top: 30px;
+            margin-top: 100px;
         }
     </style>
 </head>
@@ -161,10 +305,10 @@
         <nav>
             <div class="logo">Museo Sans</div>
             <ul>
-                <li ><a class="a1" href="#collections">Collections</a></li>
-                <li ><a href="#mission">Our Mission</a></li>
+                <li><a target="" href="#collections">Collections</a></li>
+                <li><a href="#mission">Our Mission</a></li>
                 <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact Now</a></li>
+                <li id="a1"><a  href="#contact">Contact Now</a></li>
             </ul>
         </nav>
     </header>
@@ -173,7 +317,8 @@
         <div class="card beige">
             <span class="tag">CONGREEVE STREET</span>
             <h2>Birmingham <span class="bold">Museums.</span></h2>
-            <img src="https://s3-alpha-sig.figma.com/img/dd77/b915/9bd218bf2e2ad3b90da9abce140d1ba8?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=EaI~WY5J95rtFSHICaUU9V~E5sFwUTDe22mTU3UaxFjdTDJz0t1MUzqEd4T6MrVcUzMCF1n4rcul0YaYPkIaut5I6EshQDv0F0yDGRPrDe8~se1AU~hXxDNXu0PjRBgulUskXZRikvLbojrPYD3cBRxWEtSg23doyC9vHlJDzFLz5RtWcUSsurc5AiW425KBvXyNV-yLZoBwk4D9DNb0H3ROJNhLyODMVsbRFGbhE-pES96swA6P6J6LPLYf-Zoy7dxkKWJ6wFvFWGouJqixiOkpCvuFWyF6MNjpsy~hmKPsXwYWboGZADYAl7Sbv~-kOvzLqIHyfrgQ8q7ngY8fKw__" alt="Birmingham Museum" >
+            <div class="img1"></div>
+            <div class="line1"></div>
             <button>GET STARTED</button>
         </div>
         
@@ -181,23 +326,26 @@
             <span class="tag">EUROPEANA</span>
             <h2>A Woman Slicing <span class="bold">Bread.</span></h2>
             <p>DATE: 1800. INSTITUTION: RIJKSMUSEUM.</p>
-            <img src="https://s3-alpha-sig.figma.com/img/7a05/7321/02ecc2f34052f178793eda90e3be1bd3?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VShmhGKm~p4nl-3xeCpyCFOHIFehRwi~kThti4HN8rnFx9Q9rtT3NGWimBhKE5jvN56yFVHcc2jS1CEabKg1-styvRs0UmXu-D1NGZHR46NEH49RgzQAjwlgD51bc6ja-h3tscJX44vp6VevKH~jw8nhhbrCev4vfjZ7r-KDlzB5GRUBIMTmaBcbMccISD0lKJsYssl1jgE60DVwbWYYe8v1h4PXH8GBaR9sCYDGOAsxXcDlChimOy-zvCoGMGNdiKaaJIM8rkBg1mOr2a8i0yLQPsKZcSfJRJI9j~DCO7BUXK~M~ZMBEKJaiyrV0-UHy94Fu91pJSRefvVLmT4skA__" alt="Woman Slicing Bread">
+            <p class="imoe">PROVIDER: RIJKSMUSEUM. PROVIDING COUNTRY:<br> NETHERLANDS. PUBLIC DOMAIN. PHOTO BY EUROPEANA.</p>
+            <div class="img2"></div>
+            <div class="line2"></div>
             <button>GET STARTED</button>
         </div>
         
         <div class="card brown">
-            <img src="https://s3-alpha-sig.figma.com/img/bcfd/ff4d/3ab4aa39f45b58c07736be0cbdee0039?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=sYxacYz1pzRIYQ~L2Erh8KT04MzbRGtIsQYIM5pkIJ-XLtgYL0fvPVlopb~cFzlGMVVquekDITXmfgcawdWlqO09YodhAe9Rl9Klf2mKSmI~PvufxWOoHIAQKLm~9f~YDdAWaOdbCqWbxLEiGF9NOhxm-0YIdnf~4iU6zQfJGfwD3IKEgEEpy-6D2l4Yoyq~EFZSaJjK2q2qNA5XXaOd6bJd4qlvpEpdSWOSkQIVsDil6jrFuUzcbIis1TwRz3h6LMa6FckZWVlnZwwBG8d5SVlxXfzdbMA6XVyAwzknfr5cP14-gIKes-gtHAjwdvuflgd4MzXD9D5zy0OafiUrjQ__" alt="Vintage Portrait">
+            <div class="img3"></div>
             <h2 class="port">Portrait</h2>
             <p>PORTRAIT OF MARITGE CLAESDR VOOGHT. DATE: 1639.</p>
-            
+            <div class="line3"></div>
             <button>GET STARTED</button>
         </div>
         
         <div class="card light-brown">
             <span class="tag">EUROPEANA</span>
             <h2>Vintage <span class="bold">Painting.</span></h2>
-            <img src="https://s3-alpha-sig.figma.com/img/7926/ae8d/c1102600cf253f254f2bd57b7b254745?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QAc0qe5h5D2y9tpxk-2bU4VgrRFTbkY5d4dEEKO6rPoGSNuU7lK0urNOUKi8lVRgsbmbFZ9nRXBRpgwd6Leig0SZaaKW7Z8JBpfi029apAOq0ARZ4TPTMyW8xnziVpa0HGZrMiZ~qtmRxrQesLHlMClk5RCUbgeJd4HxW1uzCglLbYyl6PPYiVANrAU8EVmjN8i58DSmW-lRbDIAvOalzwf5~TqvDg7Ol6cPjiBmWkSMaGVwe1hxc1x91lNDRNLXdewbp8K6furaqs57J-c~qCBxrKH-OVcFY9ADb-DeYv504ZBUUtQorLgAdlpPWxxL~WdlzWG4ucoqZt78Vjk0MQ__" alt="vintage painting" style="border-radius: 200px;">
+            <div class="img4"></div>
             <p>PORTRAIT OF A MAN. DATE: 1648. INSTITUTION: RIJKSMUSEUM.</p>
+            <div class="line4"></div>
             <button>GET STARTED</button>
         </div>
     </section>
